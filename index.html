@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Om Sonawane PriceTable</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.4/css/selectize.default.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="price-calculator-wrap wrap">
+  <div class="price-calculator">
+    <div class="price-table">
+      <div class="price-table-tier tier-1">
+        <h2>Free</h2>
+        <p class="tier-price">
+          <i class="fa fa-usd" aria-hidden="true"></i>
+          <span class="tier-amount">0</span>
+          <span class="tier-currency">USD</span><br>
+          per profile, per month
+        </p>
+      </div>
+      <div class="price-table-package orange-light">
+        <ul>
+          <li>
+            <i class="fa fa-check" aria-hidden="true"></i>
+            Facebook Only
+          </li>
+          <li>
+            <i class="fa fa-check" aria-hidden="true"></i>
+            Customisable Workflows
+          </li>
+          <li>
+            <i class="fa fa-check" aria-hidden="true"></i>
+            Customisable Dashboards
+          </li>
+          <li>
+            <i class="fa fa-check" aria-hidden="true"></i>
+            Unlimited Users
+          </li>
+        </ul>
+      </div>
+      <div class="price-table-button">
+        <a class="price-button yellow" href="">Start free Account</a>
+      </div>
+    </div>
+    <div class="price-table">
+      <div class="price-table-tier tier-2">
+        <h2>Professional</h2>
+        <p class="tier-price">
+          <i class="fa fa-usd" aria-hidden="true"></i>
+          <span class="tier-amount">10</span>
+          <small>USD</small><br>
+          per profile, per month
+        </p>
+      </div>
+      <div class="price-table-package orange-dark">
+        <ul>
+          <li>
+            <i class="fa fa-check" aria-hidden="true"></i>
+            1 Social Profiles
+          </li>
+          <li>
+            <i class="fa fa-check" aria-hidden="true"></i>
+            Facebook, Twitter & Instagram
+          </li>
+          <li>
+            <i class="fa fa-check" aria-hidden="true"></i>
+            Unlimited Users
+          </li>
+          <li>
+            <i class="fa fa-check" aria-hidden="true"></i>
+            Access to Global Settings
+          </li>
+        </ul>
+      </div>
+      <div class="price-table-button">
+        <a class="price-button black" href="">Start 14-Day Trial</a>
+      </div>
+    </div>
+    <div class="price-table">
+      <div class="price-table-tier tier-3">
+        <h2>Get a Quote</h2>
+        <p>Select the number of profiles you want to connect</p>
+      </div>
+      <div class="price-table-calculator">
+        <p class="input-error">Input accepts only numbers</p>
+        <ul>
+          <li>
+            <label class="label-facebook">
+              <i class="fa fa-facebook-official" aria-hidden="true"></i>
+              Facebook
+            </label>  
+            <select id="fbAccounts" placeholder="0"></select>
+          </li>
+          <li>
+            <label class="label-twitter">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              Twitter
+            </label>
+            <select id="twitterAccounts" placeholder="0"></select>
+          </li>
+          <li>
+            <label class="label-instagram">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              Instagram
+            </label>
+            <select id="instaAccounts" placeholder="0" data-account="insta"></select>
+          </li>
+          <li class="price-table-calculator-total">
+            <span class="label">Total Price:</span>
+            <span class="price">$
+              <span class="js-price">0</span>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div class="price-table-button">
+        <a class="price-button black" href="">Request Demo</a>
+      </div>
+    </div>
+  </div> <!-- /.price-calculator -->
+  <button class="price-prev price-nav-button"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></button>
+    <button class="price-next price-nav-button"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></button>
+</div><!-- /.price-calculator-wrap -->
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.4/js/standalone/selectize.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
